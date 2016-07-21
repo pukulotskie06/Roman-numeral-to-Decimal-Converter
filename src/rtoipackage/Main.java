@@ -21,6 +21,7 @@ public class Main {
     public int convert(String n){
     int dec = 0;
       for(int x = 0; x < n.length(); x++){
+          //add the converted character into decimal
           dec += convert(n.charAt(x));
           if(x > 0){
               if(convert(n.charAt(x-1)) < convert(n.charAt(x))){
@@ -32,7 +33,7 @@ public class Main {
     return dec;
     }
     
-    
+    //This will convert the equivalent character n into its decimal value
     public int convert(char n){
         int dec = 0;
                
